@@ -2,7 +2,7 @@
 
 -- Data Combining
 
--- combining all the 6 months' data tables into a single table containing data from Jan 2023 to Jun 2023.
+-- combining all 6 months' data tables into a single table containing data from Jan 2023 to Jun 2023.
 
 CREATE TABLE IF NOT EXISTS `mainproject-393509.bike_dataset.tripdata_combined_data` AS (
 SELECT * FROM `mainproject-393509.bike_dataset.tripdata_202301`
