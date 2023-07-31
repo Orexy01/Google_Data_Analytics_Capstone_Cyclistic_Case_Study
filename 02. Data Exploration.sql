@@ -42,7 +42,7 @@ SELECT DISTINCT rideable_type, count(rideable_type) AS No_of_trips
 FROM `mainproject-393509.bike_dataset.tripdata_combined_data`
 GROUP BY rideable_type;
 
--- started_at, ended_at - TIMESTAMP - YYYY-MM-DD hh:mm:ss (To find the Number of trips that are more than a day, and less than a minute)
+-- started_at, ended_at - TIMESTAMP - YYYY-MM-DD hh:mm:ss (To find the Number of trips that are more than a day and less than a minute)
 
 SELECT 
   started_at,
