@@ -30,7 +30,7 @@ FROM
 SELECT COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_rows
 FROM `mainproject-393509.bike_dataset.tripdata_combined_data`;
 
--- *ride_id* - they all have length of 16
+-- ride_id - they all have length of 16
 
 SELECT LENGTH(ride_id) AS length_ride_id, COUNT(ride_id) AS no_of_ride_id
 FROM `mainproject-393509.bike_dataset.tripdata_combined_data`
