@@ -2,8 +2,8 @@
 
 DROP TABLE IF EXISTS `mainproject-393509.bike_dataset.tripdata_cleaned_combined_data`;
 
-CREATE TABLE IF NOT EXISTS `mainproject-393509.bike_dataset.tripdata_cleaned_combined_data` AS( --creating a new table
-  SELECT   
+CREATE TABLE IF NOT EXISTS `mainproject-393509.bike_dataset.tripdata_cleaned_combined_data`   --creating a new table
+ AS( SELECT   
   a.ride_id, rideable_type,started_at, ended_at, ride_length,
   TIMESTAMP_DIFF(ended_at, started_at, MINUTE) AS ride_duration_minutes, --a is an alias for the table. The ride_length column is selected from the derived table b, which is a result of a subquery.
   CASE EXTRACT(DAYOFWEEK FROM started_at) -- CASE statement is used to create a new column named day_of_week
