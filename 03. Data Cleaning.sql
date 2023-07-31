@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `mainproject-393509.bike_dataset.tripdata_cleaned_com
     end_lng IS NOT NULL
 );
 
--- set ride_id as primary key
+-- Set ride_id as primary key
 
 ALTER TABLE `mainproject-393509.bike_dataset.tripdata_cleaned_combined_data`
 ADD PRIMARY KEY(ride_id) NOT ENFORCED;
