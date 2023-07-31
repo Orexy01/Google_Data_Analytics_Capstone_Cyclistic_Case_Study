@@ -21,7 +21,7 @@ FROM `mainproject-393509.bike_dataset.tripdata_cleaned_combined_data`
 GROUP BY day_of_week, member_casual
 ORDER BY member_casual, no_of_trips;
 
--- What are the no. of trips a riders takes per hour
+-- What is the number of trips riders takes per hour?
 
 SELECT EXTRACT(HOUR FROM started_at) AS hour_of_day, member_casual, COUNT(ride_id) AS no_of_trips
 FROM `mainproject-393509.bike_dataset.tripdata_cleaned_combined_data`
