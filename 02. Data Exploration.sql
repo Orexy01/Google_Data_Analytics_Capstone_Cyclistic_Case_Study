@@ -47,7 +47,7 @@ GROUP BY rideable_type;
 SELECT 
   started_at,
   ended_at,
-  TIMESTAMP_DIFF(ended_at, started_at, day) AS duration_minute
+  TIMESTAMP_DIFF(ended_at, started_at, day) AS duration_day
 FROM
   `mainproject-393509.bike_dataset.tripdata_combined_data`
 ORDER BY
