@@ -42,7 +42,7 @@ Three questions will guide the future marketing program:
 
 ### 3. Process
 I will use Google Big Query to combine the various datasets into one dataset and clean it.    
-*Reason: The Microsoft Excel spreadsheet can only have 1,048,576 rows because of its inability to manage large amounts of data. Using BigQuery supports huge volumes of data and the Cyclistic dataset has more than 5.6 million rows.*
+__Reason:__ *The Microsoft Excel spreadsheet can only have 1,048,576 rows because of its inability to manage large amounts of data. Using BigQuery supports huge volumes of data and the Cyclistic dataset has more than 5.6 million rows.*
 ### Combining the Data
 SQL Query: [Data Combining](https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/01.%20Data%20Combining.sql)  
 12 CSV files are uploaded as tables in the dataset 'tripdata_2022'. Another table named "tripdata-combined-data" was created, containing 5,779,433 rows of data for the entire year. 
@@ -51,4 +51,45 @@ SQL Query: [Data Exploration](https://github.com/git-oreoluwa/Google_Data_Analyt
 Before cleaning the data, I had to familiarize myself with the data to find the inconsistencies, and what I observed are as follows:
 
 1. The table below shows all column names and their data types. The ride_id column is our primary key.
+   
+ ![image](https://user-images.githubusercontent.com/125132307/226139161-c5209861-7542-4ad6-8d9a-ce0115086e4d.png)
 
+2. When checking the dataset for __null values__, the following columns shows number of __null values__ in them:
+   *start_station_name = 833064, 
+    start_station_id = 833064, 
+    end_station_name = 915,796, 
+    end_station_id = 915,796
+    end_lat = 5795, 
+    end_lng = 5795.*
+   
+3. As ride_id has no null values, I checked for duplicates and found no duplicate rows in the data.
+   *"SELECT COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_rows
+   FROM `mainproject-393509.bike_dataset.tripdata-combined-data`;"*
+
+4. There are 3 unique types of bikes(rideable_type) in our data.
+   *electric_bike = 3,032,029, 
+    classic_bike = 2,457,214, 
+    docked_bike = 140,474.*
+
+5. <p>The started_at and ended_at show start and end time of the trip in YYYY-MM-DD hh:mm:ss UTC format. A new column ride_length was created to find the total trip duration. 5087 trips have a duration longer than a day and 149,372 trips have less than a minute duration or have an end time earlier than the start time. Other columns day_of_week and month can also be helpful in the analysis of trips at different times in a year.</p>
+
+6. member_casual column has 2 unique values as member or casual rider.
+*member = 3,440,665, 
+casual = 2,189,396*
+
+7. <p>Columns that need to be removed are start_station_id and end_station_id as they do not add value to the analysis of our current problem. The longitude and latitude location columns may not be used in analysis but can be used to visualize a map.</p> 
+
+### Data Cleaning
+SQL Query: [Data Cleaning](https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/03.%20Data%20Cleaning.sql)   
+1. 3 more columns were added. i.e. ride_length for the duration of the trip, day_of_week, and month.  
+2. Trips with a duration of less than a minute and longer than a day were excluded.
+3. A total of 149,399 rows were removed in this step
+
+## Analyze and Share
+SQL Query: [Data Analysis](https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/04.%20Data%20Analysis.sql)  
+Data Visualization: [Tableau](https://public.tableau.com/app/profile/oreoluwa.folorunsho./viz/GoogleCapstoneProject-CyclisticBikeShare/Dashboard2)  
+
+<p>The stored data is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.</p>
+Analysis question 1: How do annual members and casual riders use Cyclistic bikes differently?  
+
+   
