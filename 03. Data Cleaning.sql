@@ -55,5 +55,5 @@ AS (
 ALTER TABLE `mainproject-393509.bike_dataset.tripdata_cleaned_combined_data`
 ADD PRIMARY KEY(ride_id) NOT ENFORCED;
 
-SELECT COUNT(ride_id) AS no_of_rows       -- returned 1,820,719 rows, so 569,740 rows removed.
+SELECT COUNT(ride_id) AS no_of_rows       .
 FROM `mainproject-393509.bike_dataset.tripdata_cleaned_combined_data`;
