@@ -7,7 +7,7 @@ Course: <a href="https://www.coursera.org/learn/google-data-analytics-capstone">
 Data Source: <a href ="https://divvy-tripdata.s3.amazonaws.com/index.html">divvy_tripdata </a>.
 
 SQL Queries:
-01. Data Combining
+01. <a href = "https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/01.%20Data%20Combining.sql"> Data Combining</a> 
 02. Data Exploration
 03. Data Cleaning
 04. Data Analysis
