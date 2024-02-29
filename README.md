@@ -4,7 +4,10 @@ Course: <a href="https://www.coursera.org/learn/google-data-analytics-capstone">
 ## Introduction
 <p>This capstone project marks the end of all my learning throughout the courses of the <a href= "https://www.coursera.org/professional-certificates/google-data-analytics">Google Data Analytics Professional Certificate</a>.  In this case study, I will analyze a public dataset for a fictitious company, Cyclistic. I will follow the steps of the data analysis process: <a href= "https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/README.md#ask">Ask</a>, <a href= "https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/README.md#prepare">Prepare</a>, <a href= "https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/README.md#process">Process</a>, <a href= "https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/README.md#analyze">Analyze</a>, Share, and <a href= "https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/README.md#act">Act</a> to answer the key business questions.</p>
 
+Case Study: <a href ="https://dataanalysis1.azurewebsites.net/cv/case.pdf">PDF</a>.
+
 Data Source: <a href ="https://divvy-tripdata.s3.amazonaws.com/index.html">divvy_tripdata </a>.
+
 
 SQL Queries:
 01. <a href = "https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/01.%20Data%20Combining.sql"> Data Combining</a> 
