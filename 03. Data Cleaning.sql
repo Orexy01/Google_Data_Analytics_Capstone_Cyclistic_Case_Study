@@ -47,7 +47,7 @@ AS (
     FROM `mainproject-393509.bike_dataset.tripdata-combined-data`
   ) b  -- This part of the query joins the original tripdata-combined-data table (a) with a subquery (b) using the ride_id column. The subquery exclude the ride_length that is < 0 minutes, which is then used to join the tables.
   ON a.ride_id = b.ride_id
-  WHERE TIMESTAMP_DIFF(ended_at, started_at, MINUTE) > 0
+  WHERE ride_length > 1 AND ride_length < 1440
 );
 
 -- Set ride_id as primary key
