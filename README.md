@@ -45,7 +45,7 @@ I will use Google Big Query to combine the various datasets into one dataset and
 *Reason: The Microsoft Excel spreadsheet can only have 1,048,576 rows because of its inability to manage large amounts of data. Using BigQuery supports huge volumes of data and the Cyclistic dataset has more than 5.6 million rows.*
 ### Combining the Data
 SQL Query: [Data Combining](https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/01.%20Data%20Combining.sql)  
-12 CSV files are uploaded as tables in the dataset 'tripdata_2022'. Another table named "combined_data" is created, containing 5,779,433 rows of data for the entire year. 
+12 CSV files are uploaded as tables in the dataset 'tripdata_2022'. Another table named "tripdata-combined-data" was created, containing 5,779,433 rows of data for the entire year. 
 ### Data Exploration
-SQL Query: [Data Exploration](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/02.%20Data%20Exploration.sql)  
-Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.  
+SQL Query: [Data Exploration](https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/02.%20Data%20Exploration.sql)  
+Before cleaning the data, I familiarized myself with the data to find the inconsistencies.  
