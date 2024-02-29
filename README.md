@@ -90,6 +90,12 @@ SQL Query: [Data Analysis](https://github.com/git-oreoluwa/Google_Data_Analytics
 Data Visualization: [Tableau](https://public.tableau.com/app/profile/oreoluwa.folorunsho./viz/GoogleCapstoneProject-CyclisticBikeShare/Dashboard2)  
 
 <p>The stored data is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.</p>
-Analysis question 1: How do annual members and casual riders use Cyclistic bikes differently?  
+<p>Analysis question 1: How do annual members and casual riders use Cyclistic bikes differently?</p>
+<p>Firstly, member and casual riders are compared by the type of bikes they are using.</p>
 
-   
+The member riders make up 61% of the total rides while the remaining 39% constitutes casual riders. The chart below shows the distribution of member and casual riders based on bike types.
+
+|Total|Casual|Member|
+|-----|------|------|
+
+<img src="https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/assets/110780775/77ac1481-605d-427e-b69e-20a110e16306" width="550" height="500"/>
