@@ -38,14 +38,14 @@ Three questions will guide the future marketing program:
 <p>I will use Cyclistic’s historical trip data to analyze and identify trends from Jul 2022 to Jun 2023 which can be downloaded from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html). The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).</p>
 
 #### Data Organization
-<p>There are 12 files with the file name format bike_dataset.tripdata, and each file includes information for one month, such as the ride id, bike type, start time, end time, start station, end station, start location, end location, and whether the rider is a member or not. The corresponding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.</p>
+<p>There are 12 files with the file name format bike_dataset, and each file includes information for one month, such as the ride id, bike type, start time, end time, start station, end station, start location, end location, and whether the rider is a member or not. The corresponding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.</p>
 
 ### 3. Process
 I will use Google Big Query to combine the various datasets into one dataset and clean it.    
 *Reason: The Microsoft Excel spreadsheet can only have 1,048,576 rows because of its inability to manage large amounts of data. Using BigQuery supports huge volumes of data and the Cyclistic dataset has more than 5.6 million rows.*
 ### Combining the Data
 SQL Query: [Data Combining](https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/01.%20Data%20Combining.sql)  
-12 CSV files are uploaded as tables in the dataset '2022_tripdata'. Another table named "combined_data" is created, containing 5,667,717 rows of data for the entire year. 
+12 CSV files are uploaded as tables in the dataset 'tripdata_2022'. Another table named "combined_data" is created, containing 5,779,433 rows of data for the entire year. 
 ### Data Exploration
 SQL Query: [Data Exploration](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/02.%20Data%20Exploration.sql)  
 Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.  
