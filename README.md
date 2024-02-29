@@ -48,4 +48,7 @@ SQL Query: [Data Combining](https://github.com/git-oreoluwa/Google_Data_Analytic
 12 CSV files are uploaded as tables in the dataset 'tripdata_2022'. Another table named "tripdata-combined-data" was created, containing 5,779,433 rows of data for the entire year. 
 ### Data Exploration
 SQL Query: [Data Exploration](https://github.com/git-oreoluwa/Google_Data_Analytics_Capstone_Cyclistic_Case_Study/blob/main/02.%20Data%20Exploration.sql)  
-Before cleaning the data, I familiarized myself with the data to find the inconsistencies.  
+Before cleaning the data, I had to familiarize myself with the data to find the inconsistencies, and what I observed are as follows:
+
+1. The table below shows all column names and their data types. The ride_id column is our primary key.
+
